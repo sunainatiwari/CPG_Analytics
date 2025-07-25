@@ -10,6 +10,8 @@ import ProductPerformance from './pages/ProductPerformance';
 import SalesTrends from './pages/SalesTrends';
 import MarketShare from './pages/MarketShare';
 import Login from './pages/Login';
+import Settings from './pages/Settings';
+import Homepage from './pages/Homepage';
 
 const App = () => {
   return (
@@ -19,7 +21,8 @@ const App = () => {
         <div className="flex-1 overflow-y-auto">
           <Header />
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Homepage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/product-analysis" element={<ProductAnalysis />} />
             <Route path="/market-insights" element={<MarketInsights />} />
             <Route path="/sales-reports" element={<SalesReports />} />
@@ -27,6 +30,7 @@ const App = () => {
             <Route path="/sales-trends" element={<SalesTrends />} />
             <Route path="/market-share" element={<MarketShare />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
         </div>
       </div>

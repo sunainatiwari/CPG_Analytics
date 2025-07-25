@@ -55,7 +55,7 @@ const Dashboard = () => {
         ))}
       </div>
 
-      {/* Dashboard Action Cards */}
+      {/* Dashboard Action Cards  */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div
           onClick={() => navigate('/sales-trends')}
@@ -76,6 +76,14 @@ const Dashboard = () => {
           <p className="text-xl font-semibold">📉 Product Performance</p>
         </div>
       </div>
+
+      {/* Go back to homepage button */}
+      <button
+        onClick={() => navigate("/")}
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+      >
+        ← Go Back
+      </button>
     </div>
   );
 };
